@@ -13,10 +13,14 @@ import { CartService } from "./cart.service";
 import { CartComponent } from "./cart/cart.component";
 import { ShippingComponent } from "./shipping/shipping.component";
 import { MyResumeComponent } from "./my-resume/my-resume.component";
-import { ResumeProfileComponent } from './resume-profile/resume-profile.component';
-import { ResumeWorkExperienceComponent } from './resume-work-experience/resume-work-experience.component';
-import { ResumeEducationComponent } from './resume-education/resume-education.component';
-import { ResumeFooterComponent } from './resume-footer/resume-footer.component';
+import { ResumeProfileComponent } from "./resume-profile/resume-profile.component";
+import { ResumeWorkExperienceComponent } from "./resume-work-experience/resume-work-experience.component";
+import { ResumeEducationComponent } from "./resume-education/resume-education.component";
+import { ResumeFooterComponent } from "./resume-footer/resume-footer.component";
+import { GraphicDesignComponent } from "./graphic-design/graphic-design.component";
+import { IllustrationComponent } from "./illustration/illustration.component";
+import { InDesignComponent } from "./in-design/in-design.component";
+import { DigitalArtComponent } from "./digital-art/digital-art.component";
 
 @NgModule({
   imports: [
@@ -28,7 +32,10 @@ import { ResumeFooterComponent } from './resume-footer/resume-footer.component';
       { path: "products/:productId", component: ProductDetailsComponent },
       { path: "cart", component: CartComponent },
       { path: "shipping", component: ShippingComponent },
-      { path: "resume", component: MyResumeComponent }
+      { path: "resume", component: MyResumeComponent },
+      { path: "graphic", component: GraphicDesignComponent },
+      { path: "illustration", component: IllustrationComponent },
+      { path: "digitalart", component: DigitalArtComponent }
     ])
   ],
   declarations: [
@@ -43,7 +50,11 @@ import { ResumeFooterComponent } from './resume-footer/resume-footer.component';
     ResumeProfileComponent,
     ResumeWorkExperienceComponent,
     ResumeEducationComponent,
-    ResumeFooterComponent
+    ResumeFooterComponent,
+    GraphicDesignComponent,
+    IllustrationComponent,
+    InDesignComponent,
+    DigitalArtComponent
   ],
   bootstrap: [AppComponent],
   providers: [CartService]

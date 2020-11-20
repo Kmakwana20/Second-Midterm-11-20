@@ -18,8 +18,20 @@ export class CartService {
     this.items = [];
     return this.items;
   }
+  getGraphicDesignPortfolio() {
+    return this.http.get("/assets/graphic.json");
+  }
   getShippingPrices() {
     return this.http.get("/assets/shipping.json");
+  }
+  getIllustrationPortfolio() {
+    return this.http.get("/assets/illustration.json");
+  }
+  getInDesignPortfolio() {
+    return this.http.get("/assets/indesign.json");
+  }
+  getDigitalArtPortfolio() {
+    return this.http.get("/assets/digitalart.json");
   }
   constructor(private http: HttpClient) {}
 }
